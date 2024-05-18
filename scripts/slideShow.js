@@ -1,8 +1,7 @@
 
 function slideShow() {
-  console.log("running slideShow");
   let anyActive = false;
-  const slideShow = document.getElementsByClassName("proj-img-slideshow");
+  const slideShow = document.getElementsByClassName("proj-slideshow-block");
   // const pics = slideShow[0].getElementsByTagName("img");
   const pics = slideShow[0].children;
 
