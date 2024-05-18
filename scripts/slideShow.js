@@ -2,7 +2,6 @@
 function slideShow() {
   let anyActive = false;
   const slideShow = document.getElementsByClassName("proj-slideshow-block");
-  // const pics = slideShow[0].getElementsByTagName("img");
   
   for (i = 0; i < slideShow.length; i++) {
     let pics = slideShow[i].getElementsByTagName("img");
