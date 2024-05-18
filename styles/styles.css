@@ -182,6 +182,9 @@ section header p {
   padding: 0px;
   font-size: small;
 }
+.proj-description-block a{
+  color: green;
+}
 
 .proj-img-slideshow{
   position: relative;
