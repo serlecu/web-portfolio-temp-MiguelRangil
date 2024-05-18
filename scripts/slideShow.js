@@ -3,20 +3,24 @@ function slideShow() {
   let anyActive = false;
   const slideShow = document.getElementsByClassName("proj-slideshow-block");
   // const pics = slideShow[0].getElementsByTagName("img");
-  const pics = slideShow[0].children;
+  
+  for (i = 0; i < slideShow.length; i++) {
+    let pics = slideShow[i].getElementsByTagName("img");
 
-  for (i = 0; i < pics.length; i++) {
-    if (pics[i].className === "show"){
-      anyActive = true;
-      pics[i].className = "hidden";
-      i == pics.length - 1 ? pics[0].className = "show" : pics[i+1].className = "show";
-      break;
+    for (j = 0; j < pics.length; j++) {
+      if (pics[j].className === "show"){
+        anyActive = true;
+        pics[j].className = "hidden";
+        j == pics.length - 1 ? pics[0].className = "show" : pics[j+1].className = "show";
+        break;
+      }
     }
-  }
 
-  if (!anyActive){
-    for (i = 0; i < pics.length; i++) {
-      i == 0 ? pics[i].className = "show" : pics[i].className = "hidden";
+    if (!anyActive){
+      for (j = 0; j < pics.length; j++) {
+        j == 0 ? pics[j].className = "show" : pics[j].className = "hidden";
+      }
     }
+
   }
 }
