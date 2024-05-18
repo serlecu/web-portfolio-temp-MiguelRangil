@@ -1,10 +1,14 @@
 body {
-  background-color: #f4f4f4;
-  /* background-color: darkblue; */
-  font-family: Arial, sans-serif;
-  padding: 1rem;
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  min-height: 100vh;
+  padding: 0rem 1rem;
+  margin: 0px 0px -2rem 0px;
   scrollbar-width: thin;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
 p {
@@ -102,33 +106,45 @@ nav a:hover {
   height: 1.5rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: auto;
+  padding: 2.5rem 0rem 1.5rem 0rem;
+}
+footer p {
+  font-size: small;
+  text-align: center;
+  color: rgb(200, 200, 200);
+}
+footer .attributions p,
+footer .attributions a {
+  color: rgb(230, 230, 230);
+}
+
 
 /* PROJECT PAGES */
 .projects {
   display: flex;
   flex-direction: column;
-  /* justify-content: top; */
   gap: 2rem;
   width: 100%;
   max-width: 540px;
   height: 100%;
   margin: 0px auto;
   padding: 2rem 0rem;
-  /* border: green 1px solid; */
 }
 .projects nav{
-  /* position: absolute; */
   align-self: center;
   margin: 0px 0px auto 0px ;
   padding: 0rem 0rem;
-  /* border: red 1px solid; */
 }
 .proj-nav.top{
   position: absolute;
   align-self: start;
   height: 24px;
   width: 12px;
-  /* border: red 1px solid; */
 }
 .proj-nav svg:hover{
   fill:green;
@@ -148,9 +164,7 @@ nav a:hover {
 section header {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   gap: 0.25rem;
-  /* margin: 0rem auto 0rem 0rem; */
   margin: 0px;
   padding: 0px;
 }
@@ -170,7 +184,6 @@ section header p {
   margin: 0px;
   font-size: small;
   font-weight: 300;
-  /* font-style: italic; */
   color: gray;
 }
 
@@ -222,15 +235,11 @@ section header p {
 .proj-slideshow-block img.hidden{
   opacity: 0;
   z-index: 0;
-  /* width: 100%; */
-  /* margin: 0rem 0rem; */
   transition: opacity 1s ease-in-out;
 }
 .proj-slideshow-block img.show{
   opacity: 1;
   z-index: 1;
-  /* width: 100%; */
-  /* margin: 0rem 0rem; */
   transition: opacity 1s ease-in-out;
 }
 
