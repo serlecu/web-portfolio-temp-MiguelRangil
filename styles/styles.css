@@ -123,7 +123,17 @@ nav a:hover {
   padding: 0rem 0rem;
   /* border: red 1px solid; */
 }
-.projects nav a{
+.proj-nav.top{
+  position: absolute;
+  align-self: start;
+  height: 24px;
+  width: 12px;
+  /* border: red 1px solid; */
+}
+.proj-nav svg:hover{
+  fill:green;
+}
+.proj-nav a{
    font-size: small;
    font-style: italic;
 }
